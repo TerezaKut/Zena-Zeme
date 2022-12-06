@@ -1,0 +1,512 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/* google elementy */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+body {
+    font-family: 'Karma', serif;
+	font-size: 15px;
+	line-height: 1.75;
+	margin:0 10%;
+    width:1100px;}
+
+a {
+	color: black;
+	text-decoration: none;
+	padding: 20px;}
+
+header {
+    display: flex;
+    flex-direction:column;
+
+    /* border: 3px solid yellow; */
+}
+
+.menu {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:100%;
+    /* border: 3px solid green; */
+}
+
+.menu-polozka {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    /* border: 3px solid red; */
+
+    color: #000000;
+}
+
+.nadpis {
+    height: 130px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin:0;
+    /* border: 3px solid red; */
+}
+
+.obrazek {
+    flex: 0 1 auto;
+    position:relative;
+    background-image: url("pic/titulni.jpg");
+    width:100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    /* border: 3px solid blue; */
+}
+
+.titulni_obrazek {
+    width:90%;
+    /* border: 3px solid yellow; */
+}
+
+footer {
+    background-color:#618D02;
+}
+
+
+/* Odstavce */
+.nastred {
+    text-align: center;
+    /* border: 3px solid yellow; */
+    margin:20px;
+}
+
+
+/* Texty */
+.zenazeme {
+    font-family: 'Karma';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    height: 50px;
+    margin:0;
+    padding:0;
+    color: #B10D3E;
+    /* border: 3px solid violet; */
+}
+
+h2 {
+    font-family: 'Karma';
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    color: #B10D3E;
+    /* border: 3px solid orange; */
+    margin:0;
+    padding:0;
+}
+
+.petra {
+    font-family: 'Karma';
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    margin:0;
+    padding:0;
+    /* border: 3px solid saddlebrown   ; */
+}
+
+.podtitul {
+    font-size: 20px;
+    padding:0;
+    margin:0;
+}
+
+.zelene {
+    color: #618D02;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.popis_stred {
+    width: 700px;
+    /* border: 3px solid orange; */
+    background-repeat: ;
+}
+
+.patickapolozka {
+    display:flex;
+	top:15px;
+	vertical-align: center;
+	color: white;
+	padding:10px;
+
+}
+
+.paticka_copy {
+    width:50%;
+}
+
+.paticka_webdesign {
+    width:50%;
+    text-align: right;
+}
+
+.motto {
+    position: absolute;
+    width: 250px;
+    height: 198px;
+    left: 6%;
+    top: 15%;
+
+    font-family:'Courgette',monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.pisnicka {
+    display: flex;
+    margin:10px;
+    align-items: center;
+    justify-content:center;
+    /* border: 3px solid blue;  */
+}
+
+.pisnicka_nazev {
+    padding:1%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* border: 3px solid orange; */
+
+}
+.pisnicka_prehravac {
+    /* border: 3px solid green;  */
+
+}
+section {
+    margin-top: 50px;
+}
+
+.sede {
+    background-color: #EFECEC;
+}
+
+.oranzova {
+    background-color: #FFF4F2;
+}
+
+.zeleny_nadpis {
+    width:100%;
+    color:#618D02;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    /* border: 3px solid green; */
+
+}
+
+.cd {
+    display:flex;
+    /* border: 3px solid yellow; */
+    background-color: #FFF4F2;
+    /* background-color: #F7FFE6; */
+}
+
+.cd_obrazek {
+    width: 40%;
+    margin: 5% 5%;
+    /* border: 3px solid green; */
+}
+
+.cd_text {
+    /* border: 3px solid blue; */
+    margin: 5%;
+    display:flex;
+    flex-direction:column;
+}
+
+.cd_uvod {
+    font-size: 25px;
+    margin:10px;
+    color:#618D02;
+    font-weight: 600;
+    /* border: 3px solid blue; */
+}
+
+.cervene_velke {
+    text-transform:uppercase;
+    color:#B10D3E;
+    font-weight: 900;
+    font-size: 30px;
+    margin:10px;
+    /* border: 3px solid blue; */
+}
+
+.cd_popis {
+    margin: 15px;
+}
+
+.tlacitko {
+    border: 1px solid #618D02;
+    color:#618D02;
+    background-color: white;
+    width:140px;
+    padding:6px 5px;
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.tlacitko:hover {
+    color: white;
+    background-color: #618D02;
+}
+
+.reference {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reference_text {
+    /* border: 3px solid #618D02; */
+
+}
+
+.reference_jmeno {
+    color:#618D02;
+    font-weight:600 ;
+    padding-top: 10px;
+}
+
+.reference_karta {
+    display:flex;
+    /* border: 3px solid orange; */
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:10px;
+    padding:15px;
+    width:30%;
+    background-color:white;
+
+}
+
+.reference_tlacitko {
+    padding: 20px;
+}
+
+.nabidka {
+    display:flex;
+    justify-content:space-evenly;
+
+    flex-wrap: wrap;
+}
+
+.cervena {
+    color:#B10D3E;
+    font-size:16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.seda {
+    color: #373737;
+    font-weight:bold;
+}
+
+.nabidka-okno {
+    display: flex;
+    margin-top:30px;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: center;
+
+}
+
+.nabidka {
+    align-items: center;
+}
+
+.nabidka-text {
+}
+
+.nabidka-foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 80px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+
+}
+
+.foto1 {
+    background-image: url("pic/18_web.jpg");
+}
+
+.foto2 {
+    background-image: url("pic/57_web.jpg");
+}
+
+.foto3 {
+    background-image: url("pic/23_web.jpg");
+}
+
+.foto4 {
+    background-image: url("pic/25_web.jpg");
+}
+
+.foto5 {
+    background-image: url("pic/39_web.jpg");
+    background-size: 120%;
+    background-position: top center ;
+
+}
+.foto6 {
+    background-image: url("pic/28_web.jpg");
+}
+
+.omne {
+    display:flex;
+}
+
+.omne-obrazek {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px;
+
+    background-image: url("pic/20_web.jpg")
+}
+
+.omne-pulka {
+    width:40%;
+    margin:30px 5px;
+}
+.omne-druha {
+    margin:30px 5px;
+}
+
+.doleva {
+    text-align:left;
+    padding:0;
+    margin-top:20px;
+}
+
+.omne-tlacitko {
+    margin-left: -10px;
+    margin-top: 15px;
+}
+
+.blog-obrazek {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px;
+
+    background-image: url("pic/20_web.jpg")
+}
+
+.blog-tlacitko {
+    padding-bottom: 30px;
+    /* border: 3px solid orange; */
+
+}
+
+.blog-obrazek{
+    align-items: center;
+            border: 3px solid orange;
+
+}
+
+.blog-nazev {
+    text-transform: uppercase;
+    font-size:15px;
+    font-weight: 800;
+    color:#618D02;
+    text-align:center;
+}
+
+.blog {
+    display:flex;
+}
+
+.posledni {
+    margin-bottom: 50px;
+        /* border: 3px solid orange; */
+
+}
+
+.odkaz{
+    font-size:20px;
+    color:#B10D3E;
+    font-weight: 600;
+}
+
+.popis-vetsi {
+    font-size:18px;
+
+}
+
+.obdelnik {
+    background-color:#FFF4F2;
+    border: 3px solid orange;
+    width:100%;
+    margin:20px;
+    text-align:center;
+    font-size:20px;
+}
+
+.sekce {
+    display: flex;
+    border: 3px solid green;
+
+}
+
+
+.sekce_obrazek {
+    width: 30%;
+    align-content: 'center';
+}
+
+.obrazek-omne {
+    flex-grow:1 1 auto;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    margin:10px;
+    background-image: url("pic/24_web.jpg");
+    border: 3px solid orange;
+
+}
+
+.sekce_popis {
+    width:60%;
+    flex: 2 1 auto;
+    border: 3px solid blue;
+
+}
