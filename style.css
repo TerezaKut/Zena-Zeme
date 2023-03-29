@@ -25,8 +25,8 @@ body {
 }
 
 a {
-	color: black;
-	text-decoration: none;
+    text-decoration: none;
+    color: black;
 	}
 
 header {
@@ -205,7 +205,7 @@ h2 {
     font-family:'Courgette',monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 45px;
     text-align: center;
 
@@ -297,9 +297,20 @@ section {
 }
 
 .cd_obrazek {
-    width: 40%;
+    width: 50%;
     /* margin: 5% 5%; */
     /* border: 3px solid green; */
+}
+
+.obrazek-index
+ {
+    flex-grow:1 1 auto;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    
+    /* border: 3px solid orange; */
 }
 
 .cd_text {
@@ -493,6 +504,15 @@ section {
     background-image: url("pic/10_web.jpg");
 }
 
+/* bez hoveru */
+.cd1 {
+    background-image: url("pic/CD1-predek.png");
+}
+
+.cd2 {
+    background-image: url("pic/CD2-predek.png");
+}
+
 .cd1-predek {
     background-image: url("pic/CD1-predek.png");
 }
@@ -578,13 +598,70 @@ section {
 
 .blog-obrazek {
     width: 180px;
-    height: 180px;
+    height: 250px;
     background-size: cover;
     background-position: center center;
     margin: 20px;
     /* border: 3px solid orange; */
-    background-image: url("pic/20_web.jpg")
+    
 }
+
+.obr1 {
+    background-image: url("pic/zenska_cesta.jpg");
+}
+
+.obr2 {
+    background-image: url("pic/propojeni_priroda.jpg");
+}
+
+.obr3 {
+    background-image: url("pic/tvoreni2.jpg");
+}
+
+.obr4 {
+    background-image: url("pic/neni_treba_vyhoret.jpg");
+}
+
+.obr5 {
+    background-image: url("pic/poselstvi_zeny.jpg");
+}
+
+.obr6 {
+    background-image: url("pic/ladit_zenstvi.jpg");
+}
+
+.obr7 {
+    background-image: url("pic/zeny-z-hliny.jpg");
+}
+
+.obr8 {
+    background-image: url("pic/krasa_zenske_tvorby.jpg");
+}
+
+.obr9 {
+    background-image: url("pic/zeny_z_hliny.jpg");
+}
+
+.obr10 {
+    background-image: url("pic/s_delohou_ci_bez.jpg");
+}
+
+.obr11 {
+    background-image: url("pic/operace-delohy.jpg");
+}
+
+.obr12 {
+    background-image: url("pic/co-mi-pred-pomohlo.jpg");
+}
+
+.obr13 {
+    background-image: url("pic/co-mi-po-pomohlo.jpg");
+}
+
+
+
+
+
 
 .blog-tlacitko {
     padding-bottom: 30px;
@@ -594,6 +671,11 @@ section {
 
 .blog-obrazek{
             /* border: 3px solid orange; */
+
+}
+
+.blog-vice {
+    color:#89C013;
 
 }
 
@@ -607,7 +689,13 @@ section {
 
 .blog {
     display:flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.blog-text {
+    margin:3%;
 }
 
 .posledni {
@@ -678,15 +766,6 @@ section {
     /* border: 3px solid yellowgreen; */
 
 }
-
-.cd_obrazek {
-    width: 50%;
-    align-content: 'center';
-    /* border: 3px solid yellowgreen; */
-
-}
-
-
 
 .nadpis-cerveny {
     color:#B10D3E;
@@ -955,7 +1034,7 @@ ul {
 .cviceni-jak {
     flex: 1 1 50%;
     margin-right:2%;
-    padding: 2%;
+    padding: 1%;
     border: 3px solid #618D02;
     border-radius: 5px;
 
@@ -1121,14 +1200,14 @@ h4 {
 }
 
 .cviceni-popis {
-    font-size: 18px;
+    font-size: 16px;
     margin: 20px 20px;
     text-align: center;
 }
 
 .cviceni-banner {
-    padding: 10px 30px 30px 30px;
-    margin:20px;
+    padding: 0px 30px 30px 30px;
+    margin:10px;
 }
 
 .cara {
@@ -1354,7 +1433,7 @@ h4 {
 .grid {
     display:grid;
     column-gap: 10px;
-    grid-template-columns: 30px 1fr 1.5fr 2fr;
+    grid-template-columns: 30px 0.85fr 1.5fr 2.15fr;
     grid-template-rows: repeat(16, auto);
     align-items:center;
 
@@ -1364,7 +1443,19 @@ h4 {
 .grid-prvni {
     display:grid;
     column-gap: 10px;
-    grid-template-columns: 30px 1fr 1.5fr 2fr;
+    row-gap: 20px;
+    align-items:start;
+    justify-content: start;
+    grid-template-columns: 0.7fr 1.5fr 2fr 1fr;
+}
+
+.grid-druhy {
+    display:grid;
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items:start;
+    justify-content: start;
+    grid-template-columns: 0.8fr 1.5fr 1fr;
 }
 
 .poradi {
@@ -1373,10 +1464,10 @@ h4 {
 
 }
 
-.poradi:hover {
+/* .poradi:hover {
     font-size: 30px;
     background-image: "pic/play-green.png" ;
-}
+} */
 
 .ikony-prehravac {
     width:20px;
@@ -1405,11 +1496,14 @@ h4 {
 .nazev-pisne {
     font-size: large;
     font-weight: bold;
+    margin-top:15px;
 }
 
 .popisek-pisne {
     justify-self: end;
+    font-size:12px;
 }
+
 
 label {
     display: block;
